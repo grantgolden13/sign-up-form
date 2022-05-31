@@ -7,13 +7,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0px;
+}
+
 .odin-container {
     background-image: url(/assets/images/background-image.jpg);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     width: clamp(260px, 40%, 600px);
-    min-height: 99vh;
+    min-height: 100vh;
 }
 
 .banner {
