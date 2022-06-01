@@ -30,7 +30,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 240px;
+    margin-top: 200px;
 }
 
 .odin-logo {
@@ -54,14 +54,22 @@ html, body {
 }
 
 .main-container {
-    flex: 1 0.5 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    flex: 1 1 600px;
     min-height: 100vh;
 }
 
-.cta {
+.cta-container {
+    flex: 1 1 220px;
     background-color: #f5f7fa;
-    margin-top: 140px;
-    padding: 40px;
+    padding: 0px 50px 0px 50px;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 120px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17pt;
     font-weight: 500;
@@ -70,6 +78,7 @@ html, body {
 
 .link {
     margin-left: 4px;
+    margin-right: 4px;
     color: rgba(256, 256, 256, 0.9);
 }
 
@@ -78,12 +87,72 @@ html, body {
 }
 
 .form-container {
-    padding: 40px;
+    flex: 0 1 auto;
+    padding: 30px 50px 30px 50px;
 }
 
 .form-heading {
+    display: inline-block;
+    margin-top: -15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17pt;
     font-weight: 500;
     line-height: 1.25;
+}
+
+.btn-container {
+    flex: 1 1 auto;
+    padding: 30px 50px 30px 50px;
+    background-color: #f5f7fa;
+}
+
+.create-acct-btn {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #596D48;
+    padding: 12px 48px 12px 48px;
+    box-shadow: 0 0 4px 2px lightgrey;
+}
+
+.create-acct-btn:hover {
+    cursor: pointer;
+    background-color: #3c4d2d;
+}
+
+.login,
+.login:visited {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.login-span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 830px;
+}
+
+label {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.control {
+    padding: 10px 40px 10px 0px;
+}
+
+input {
+    width: 240px;
+    height: 28px;
+}
+
+input:focus {
+    border: 2px solid #3c4d2d;
+    box-shadow: 0 0 6px 3px #3c4d2d;
 }
