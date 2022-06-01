@@ -8,7 +8,7 @@ html, body {
 
 @font-face {
     font-family: NorseBold;
-    src: url(assets/fonts/Norse-Bold.OTF);
+    src: url(./assets/fonts/Norse-Bold.otf);
 }
 
 .site-container {
@@ -16,7 +16,7 @@ html, body {
 }
 
 .odin-container {
-    background-image: url(assets/images/background-image.JPG);
+    background-image: url(./assets/images/background-image.jpg);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
